@@ -1,16 +1,11 @@
 <html>
  <body>   
   <?php
-    SaveFile("textfile.txt");
-function SaveFile($filename)
-{
-$myfile = fopen(filename, "w") or die("Unable to open file!");
-$txt = "John Doe\n";
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
 fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
+$txt = "Jane Doe\n";
 fwrite($myfile, $txt);
-fclose($myfile);
-}
-  ?>   
+fclose($myfile); 
  </body>
 </html>
